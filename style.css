@@ -1,0 +1,152 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background-image: url(image/pexels-christian-heitz-285904-842711.jpg);
+    background-position: center;
+    background-size: cover;
+    color: white;  
+}
+   .container{
+     display: flex;
+     justify-content: center;
+     min-height: 100vh;
+     align-items: center;
+     gap: 10px;
+   }
+[data-testid="test-profile-card"]{
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    width: 400px;
+    height: 590px;  
+    border-radius: 20px;
+    backdrop-filter: blur(10px);
+    box-shadow: 0 15px 35px rgba(0,0,0,0.5);
+    transform-style: preserve-3d;
+    animation: float 1s ease-in-out infinite alternate;
+}
+@keyframes float {
+    from {
+        transform: translateY(0px);
+    }
+    to {
+        transform: translateY(10px);
+    }  
+}
+  figure {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(6, 183, 196);
+    border-radius: 20px;
+    width: 100%;
+    height: 150px;
+    overflow: hidden;
+  }
+figure img{
+    width: 35%; 
+     height: 90%;
+    border-radius: 50%;
+  }
+  figure img:hover{
+    box-shadow: 0 0 15px grey,
+                0 0 15px grey;
+    transform: scale(1.1);
+    transition: 0.9s ease-in-out;            
+  }
+[data-testid="test-user-name"]{
+    text-align: center;
+    padding-top: 10px;
+    font-size: 400;
+    font-weight: bold;
+}
+[data-testid ="test-user-subtitle"]{
+    text-align: center;  
+}
+ [data-testid="test-user-bio"]{
+    padding: 10px 20px;
+    text-align: center;
+ }
+[data-testid="test-user-hobbies"] {
+    margin: 10px;
+     padding: 0 20px;
+ }
+ [data-testid="test-user-hobbies"] p  {
+     font-weight: bold;
+     font-size: large;
+ }
+ [data-testid="test-user-dislikes"]{
+     margin: 0 10px 10px;
+    padding: 0 20px;
+ }
+[data-testid="test-user-dislikes"] p{
+    font-size: large;
+    font-weight: bold;
+}
+.current-time i{
+    margin-left: 10px;
+}
+ #time{
+    margin-left: 2px;
+ }
+[data-testid="test-user-social-links"]{
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    padding-top: 10px;
+    font-size: large; 
+}
+[data-testid="test-user-social-github"]{
+    border-radius: 60%;
+    background: black;
+    padding: 10px;
+}
+[data-testid="test-user-social-twitter"]{
+    border-radius: 60%;
+    background: black;
+    padding: 10px;
+}
+[data-testid="test-user-social-linkedin"]{
+    border-radius: 60%;
+    background: blue;
+    padding: 10px;
+}    
+[data-testid="test-user-social-instagram"]{
+    border-radius: 60%;
+    background: rgb(248, 59, 115);
+    padding: 10px;
+} 
+[data-testid="test-user-social-github"]:hover , [data-testid="test-user-social-twitter"]:hover , 
+[data-testid="test-user-social-linkedin"]:hover, [data-testid="test-user-social-instagram"]:hover{
+    cursor: pointer;
+    box-shadow: 1px 1px 5px gray;
+    transition: 0.3s ease-in;
+    transform: scale(1.1);
+    transition:  all 0.5s ease-in-out;
+}  
+[data-testid="test-user-button"] {
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   height: 50px;
+}
+[data-testid="test-user-button"] button{
+    background: rgb(6, 183, 196);
+    color: white;
+    padding: 10px 15px;
+    margin-top: 10px;
+    outline: none;
+    border: none;
+    border-radius: 20px;
+}
+[data-testid="test-user-button"] button:hover{
+    cursor: pointer;
+    box-shadow: 2px 2px 3px grey; 
+    transition: 0.3s ease-in;
+    background-color: white;
+    color: rgb(6, 183, 196) ; 
+}
+
+
